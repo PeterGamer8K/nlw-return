@@ -22,7 +22,7 @@ export function FeedbackTypeStep ({ onFeedbackTypeChanged }: FeedbackTypeStepPro
                     {
                         Object.entries(feedbackTypes).map(([key, value]) => {
                             
-                        console.log(key, value);
+                        
                             
                             
                         return (

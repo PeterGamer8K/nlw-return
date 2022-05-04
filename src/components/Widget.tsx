@@ -1,7 +1,7 @@
 import { ChatTeardropDots} from 'phosphor-react';
 import { useState } from 'react';
 import { Popover } from '@headlessui/react'
-import { WidgetFrom } from './WidgetFrom';
+import { WidgetForm } from './WidgetForm';
 
 
 export function Widget () {
@@ -12,7 +12,7 @@ export function Widget () {
         <Popover className="absolute bottom-4 right-4 md:bottom-8 md:right-8 flex flex-col items-end">
 
             <Popover.Panel>
-                <WidgetFrom />
+                <WidgetForm />
             </Popover.Panel>
 
 

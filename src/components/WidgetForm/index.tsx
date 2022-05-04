@@ -38,7 +38,9 @@ export function WidgetForm ()  {
 
     const [ feedbackType, setFeedbackType ] = useState<FeedbackType | null>(null);
 
-
+    function handleFeedbackRestartFeedback() {
+        setFeedbackType(null);
+    }
 
     return  (
 
@@ -49,7 +51,10 @@ export function WidgetForm ()  {
             { !feedbackType ? (
                 < FeedbackTypeStep onFeedbackTypeChanged={setFeedbackType} />
             ) : (
-                < FeedbackContentStep />
+                < FeedbackContentStep 
+                feedbackType={feedbackType}
+                onFeedbackRestartRequested={handleFeedbackRestartFeedback}
+                />
             )}
 
             <footer className="text-xs text-neutral-400">
